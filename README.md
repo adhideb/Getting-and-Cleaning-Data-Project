@@ -8,8 +8,8 @@ Dataset used: [Human Activity Recognition Using Smartphones] (http://archive.ics
 
 ## Files
 
-`CodeBook.md` describes the variables, the data, and any transformations that were performed to clean up the data.
+`CodeBook.md` describes the variables and the 5 step transformations that were performed to clean up the data.
 
 `run_analysis.R` contains the script to perform the required analyses in 5 steps. 
 
- `avg_data.txt` contains the tidy data set obtained in the last step
+`avg_data.txt` contains the tidy data set obtained in the last step
