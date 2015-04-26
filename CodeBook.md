@@ -9,7 +9,7 @@
 * `activity.labels` contains the description of different activities
 * `merged.data` is the merged dataset of  `x.data`, `y.data` and `sub.data`
 * `avg.data` is the final tidy data set created from `merged.data` as per requiremnt
-*  Finally, `averages_data` contains the relevant averages which will be later stored in a `.txt` file. `ddply()` from the plyr package is used to apply `colMeans()` and ease the development.
+
 
 
 # Transformation Steps
@@ -17,8 +17,8 @@
 The script `run_analysis.R` performs 5 transformation steps to clean and process the data as per the project requiremnt.
 
 * Merge the similar training and test datasets by rows using `rbind()` function. 
-* Extract the columns with mean and standard deviation measures from the whole dataset. Rename these columns with their descriptive names taken from  the `features.txt` file.
+* Extract the columns with mean and standard deviation measures from the whole dataset. Rename these 66 columns with their descriptive names taken from  the `features.txt` file.
 * Substitute the six activity identifiers in the dataset by their descriptive names coming from the `activity_labels.txt` file
 * Rename the remaining columns with descriptive variable names.
-* Generate a new tidy dataset with all the average measures for each subject and each activity (30 subjects * 6 activities = 180 rows). The output file `avg_data.txt` is uploaded in the repository.
+* Generate a new tidy dataset with all the average measures for each subject and each activity.  `ddply()` from the plyr package is used to apply `colMeans()` and ease the development. The output file `avg_data.txt` contains total 180 records (30 subjects * 6 activities) and is uploaded in the repository.
 
